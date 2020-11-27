@@ -49,7 +49,11 @@ public class Dialog : MonoBehaviour
                 }
             } else
             {
+<<<<<<< HEAD
                 game.textDisplay.text = sentencesNpc[index];
+=======
+                game.textDisplay.text = game.translationController.GetNPCSentence(index);
+>>>>>>> master
             }
             
         }       
@@ -84,6 +88,7 @@ public class Dialog : MonoBehaviour
         if (tag == "RandomTalk" && !endTalk)
             index = Random.Range(0, sentencesNpc.Length - 1);
         else if(endTalk)
+<<<<<<< HEAD
         {
             GameManager.Instance.interactBttn.SetActive(false);
             isin = false;
@@ -96,6 +101,20 @@ public class Dialog : MonoBehaviour
         game.textDisplay.text = "";
         foreach (char letter in sentencesNpc[index].ToCharArray())
         {
+=======
+        {
+            GameManager.Instance.interactBttn.SetActive(false);
+            isin = false;
+            startConversation = false;
+            game.dialogBox.SetActive(false);
+            game.interactBttn.SetActive(false);
+            isin = false;            
+            Destroy(this);            
+        }
+        game.textDisplay.text = "";
+        foreach (char letter in game.translationController.GetNPCSentence(index).ToCharArray())
+        {
+>>>>>>> master
             if(game.textDisplay.text.Length == sentencesNpc[index].Length)
             {
                 break;

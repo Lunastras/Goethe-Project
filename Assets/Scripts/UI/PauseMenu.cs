@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 ﻿using System.Collections;
+=======
+﻿using System;
+using System.Collections;
+>>>>>>> master
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -32,6 +37,14 @@ public class PauseMenu : MonoBehaviour
         StartCoroutine(GoToMenuRoutine());
     }
 
+<<<<<<< HEAD
+=======
+    private void Start()
+    {
+        pauseMenu.SetActive(false);
+    }
+
+>>>>>>> master
 
     private IEnumerator GoToMenuRoutine()
     {

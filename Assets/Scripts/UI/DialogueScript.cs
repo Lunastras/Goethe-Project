@@ -10,8 +10,8 @@ public class DialogueScript : MonoBehaviour
 {
     private static string dialogueSignal = ">>>>! ";
     private static string dialogueEndSignal = "***!";
-    private static string lineStartSignal = " /: ";
-    private static string lineEndSignal = " :/";
+    private static string lineStartSignal = "/:";
+    private static string lineEndSignal = ":/";
 
     private static List<string> rawDialogue;
     private static string[] dialogueLines;
@@ -26,36 +26,93 @@ public class DialogueScript : MonoBehaviour
     // Parameters:
     //   index: current dialogue to play
     //
-    public static void FetchDialogue(int index)
+    public static void FetchDialogue(int indez)
     {
+        char index = (char)(indez + (char)96);
+
+        TextAsset myTextDataEN = Resources.Load<TextAsset>("DialogueFolder/Dialogue");
+        TextAsset myTextDataDE = Resources.Load<TextAsset>("DialogueFolder/DialogueDE");
+
+        string textEnglish = myTextDataEN.text;
+        string textDeutch = myTextDataDE.text;       
+
         string targetFile;
+
         if (Application.platform == RuntimePlatform.WindowsEditor ||
             Application.platform == RuntimePlatform.WindowsPlayer)
-            targetFile = @"Assets\Scripts\UI\Dialogue.txt";
+        {
+            switch (GameManager.Instance.Language)
+            {
+                case "en_GB":
+                    targetFile = "EN";
+                    break;
+                case "de_DE":
+                    targetFile = "DE";
+                    break;
+                default:
+                    targetFile = "EN";
+                    break;
+            }
+        }
         else // Platform is not Windows
         {
-            targetFile = @"Assets/Scripts/UI/Dialogue.txt";
+            switch (GameManager.Instance.Language)
+            {
+                case "en_GB":
+                    targetFile = "EN";
+                    break;
+                case "de_DE":
+                    targetFile = "DE";
+                    break;
+                default:
+                    targetFile = "EN";
+                    break;
+            }
         }
-        
-        System.IO.StreamReader file = new System.IO.StreamReader(@targetFile);
-        
+
+
+        StringReader fileEN = new StringReader(@textEnglish);
+        StringReader fileDE = new StringReader(@textDeutch);
+
+
         string line;
         rawDialogue = new List<string>();
 
-        while ((line = file.ReadLine()) != null)
+        if(targetFile == "EN")
         {
-            if (line.Contains(dialogueSignal))
+            while ((line = fileEN.ReadLine()) != null)
             {
-                if (line.Contains(index.ToString())) //if desired dialogue
+                if (line.Contains(dialogueSignal))
                 {
-                    while (!(line = file.ReadLine()).Contains(dialogueEndSignal))
+                    if (line.Contains(index.ToString())) //if desired dialogue
                     {
-                        rawDialogue.Add(line);
-                       // Debug.Log(line);
+                        while (!(line = fileEN.ReadLine()).Contains(dialogueEndSignal))
+                        {
+                            rawDialogue.Add(line);
+                            // Debug.Log(line);
+                        }
                     }
                 }
             }
         }
+        else if (targetFile == "DE")
+        {
+            while ((line = fileDE.ReadLine()) != null)
+            {
+                if (line.Contains(dialogueSignal))
+                {
+                    if (line.Contains(index.ToString())) //if desired dialogue
+                    {
+                        while (!(line = fileDE.ReadLine()).Contains(dialogueEndSignal))
+                        {
+                            rawDialogue.Add(line);
+                            // Debug.Log(line);
+                        }
+                    }
+                }
+            }
+        }
+        
 
         dialogueLines = new string[rawDialogue.Count];
         speakingCharacter = new string[rawDialogue.Count];
@@ -63,17 +120,27 @@ public class DialogueScript : MonoBehaviour
         for(int i = 0; i < rawDialogue.Count; i++)
         {
             line = rawDialogue[i];
-
-
+            
             int lineStart = line.IndexOf(lineStartSignal, System.StringComparison.Ordinal);
             int lineEnd = line.IndexOf(lineEndSignal, System.StringComparison.Ordinal);
 
-            speakingCharacter[i] = line.Substring(0, lineStart);
-
-            //(lineStart + lineStartSignal.Length)
-            dialogueLines[i] = line.Substring((lineStart + lineStartSignal.Length), (line.Length - (lineStart + lineStartSignal.Length) - lineEndSignal.Length));
-
-            Debug.Log(speakingCharacter[i] + ": " + dialogueLines[i]);
+            Debug.Log(i + " of " + index);
+            if (lineStart < 0)
+            {
+                Debug.LogWarning(line);
+                lineStart = line.IndexOf(lineStartSignal, System.StringComparison.Ordinal);
+                Debug.Log(lineStart);
+                
+                speakingCharacter[i] = line.Substring(0, lineStart);
+                dialogueLines[i] = line.Substring((lineStart + lineStartSignal.Length), (line.Length - (lineStart + lineStartSignal.Length) - lineEndSignal.Length));
+            }
+            else
+            {
+                speakingCharacter[i] = line.Substring(0, lineStart);
+                //(lineStart + lineStartSignal.Length)
+                dialogueLines[i] = line.Substring((lineStart + lineStartSignal.Length), (line.Length - (lineStart + lineStartSignal.Length) - lineEndSignal.Length));
+//            Debug.Log(speakingCharacter[i] + ": " + dialogueLines[i]);
+            }
         }
     }
 
