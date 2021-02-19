@@ -1,7 +1,22 @@
 fileFormatVersion: 2
 guid: 89002b3bd3a166c42938b67429ecf5c9
 SpeedTreeImporter:
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AlaskaCedarBark_LOD0
+    second: {fileID: 2100000, guid: 34075df254e711b46b55252cdb902020, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AlaskaCedarNeedles_LOD0
+    second: {fileID: 2100000, guid: 3df1e8262cd60e04f817c42515012690, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AlaskaCedar_Low_LOD0
+    second: {fileID: 2100000, guid: 6948a43498cf6814fa85027f91e5161f, type: 2}
   serializedVersion: 6
   mainColor: {r: 1, g: 1, b: 1, a: 1}
   hueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}

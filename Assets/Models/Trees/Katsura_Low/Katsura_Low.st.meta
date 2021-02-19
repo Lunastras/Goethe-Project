@@ -1,7 +1,22 @@
 fileFormatVersion: 2
 guid: 362123371f615a349b642a0088acd510
 SpeedTreeImporter:
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: KatsuraBark_LOD0
+    second: {fileID: 2100000, guid: 3bc17bf568fe8244ca0ce1ec00b07872, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: KatsuraBranches_LOD0
+    second: {fileID: 2100000, guid: 21ed49907794de641a178d045719368d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Katsura_Low_LOD0
+    second: {fileID: 2100000, guid: 85503a3e948b59d44a8ebc003be2261b, type: 2}
   serializedVersion: 6
   mainColor: {r: 1, g: 1, b: 1, a: 1}
   hueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}

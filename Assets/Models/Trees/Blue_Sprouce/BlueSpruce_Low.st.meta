@@ -1,7 +1,17 @@
 fileFormatVersion: 2
 guid: b6c23dba1c615f847b1ded78e951cfdc
 SpeedTreeImporter:
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlueSpruceBark_LOD0
+    second: {fileID: 2100000, guid: f0f764f00c5fe6c408357acc57ba77a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BlueSpruce_Low_LOD0
+    second: {fileID: 2100000, guid: aa290721571fa7c4ba61d6e3c3975a4e, type: 2}
   serializedVersion: 6
   mainColor: {r: 1, g: 1, b: 1, a: 1}
   hueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}

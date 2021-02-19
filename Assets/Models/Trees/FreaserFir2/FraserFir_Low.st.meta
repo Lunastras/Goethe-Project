@@ -1,7 +1,27 @@
 fileFormatVersion: 2
 guid: 3966b9152db421e46a741f32da0a28a5
 SpeedTreeImporter:
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Branches_03_LOD0
+    second: {fileID: 2100000, guid: 7727128ca9318ab48b63058840787405, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FraserFirBark_LOD0
+    second: {fileID: 2100000, guid: bc6f1eb2464abbd4d83b434ab71b2a29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FraserFirNeedles_1_LOD0
+    second: {fileID: 2100000, guid: c20bc2792c880484ea7ac076b07ba0ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FraserFir_Low_LOD0
+    second: {fileID: 2100000, guid: a8877e89b20c00741a2e64cdb32da443, type: 2}
   serializedVersion: 6
   mainColor: {r: 1, g: 1, b: 1, a: 1}
   hueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}

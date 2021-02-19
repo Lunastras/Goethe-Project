@@ -1,7 +1,17 @@
 fileFormatVersion: 2
 guid: 9c558e3085c6f714d933025e6777b878
 SpeedTreeImporter:
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JeffreyPineBark_LOD0
+    second: {fileID: 2100000, guid: efcbe257d63c5b6489f0d1091d564253, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JeffreyPine_Low_Brenchg_LOD0
+    second: {fileID: 2100000, guid: 09e0c1e20e2c89c4dbecec21a032c275, type: 2}
   serializedVersion: 6
   mainColor: {r: 1, g: 1, b: 1, a: 1}
   hueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}

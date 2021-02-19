@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -33502,7 +33502,7 @@ PrefabInstance:
     - target: {fileID: 4511447379084763376, guid: 189760d13d3073c41887258bb5e88b8c,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 80
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 4511447379084763376, guid: 189760d13d3073c41887258bb5e88b8c,
         type: 3}
@@ -33573,14 +33573,8 @@ PrefabInstance:
     - target: {fileID: 4511447379717896966, guid: 189760d13d3073c41887258bb5e88b8c,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 80
+      value: 70
       objectReference: {fileID: 0}
-    - target: {fileID: 4511447379717896966, guid: 189760d13d3073c41887258bb5e88b8c,
-        type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 7fcfe25880bf74f6c88c5971d0268eae,
-        type: 3}
     - target: {fileID: 4511447380235052838, guid: 189760d13d3073c41887258bb5e88b8c,
         type: 3}
       propertyPath: m_Name
@@ -36314,7 +36308,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2140041928, guid: 4d212e1493be8fa4a810381a2434f41f, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2140041928, guid: 4d212e1493be8fa4a810381a2434f41f, type: 3}
       propertyPath: m_AnchoredPosition.x

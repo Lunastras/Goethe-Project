@@ -1,7 +1,22 @@
 fileFormatVersion: 2
 guid: 4061753e9188aeb43869edae66a086f9
 SpeedTreeImporter:
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FraserFirBark_LOD0
+    second: {fileID: 2100000, guid: 33d1a4a791f6549468bca9a73895b8db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FraserFir_Low3_LOD0
+    second: {fileID: 2100000, guid: 0913493e05c040149942840d345d1527, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FraserFir_Low3_LOD1
+    second: {fileID: 2100000, guid: 508012b681c6cd1458a4e967e5472cfe, type: 2}
   serializedVersion: 6
   mainColor: {r: 1, g: 1, b: 1, a: 1}
   hueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}
