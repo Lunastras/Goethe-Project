@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -284,7 +284,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 23.900024, y: -2832}
+  m_AnchoredPosition: {x: 23.899902, y: -2832}
   m_SizeDelta: {x: -217, y: 4646}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &387084104
@@ -308,16 +308,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: "<size=+7><b>Collaboration of Retina Film Production and BUG Lab</b></size>\n\n\n\n\n\n\n\n\n<size=+10><b>Experts</b></size>\nDr.
     G\xFCven \xC7atak\nDavid Moscovici\n\n\n\n\n<size=+10><b>Dev-Team</b></size>\nRetina
-    Film Production\nBUG Lab\n\n\n<size=+10><b>Programming:</b></size>\nBucurescu
+    Film Production\nBUG Lab\n\n\n\n\n<size=+10><b>Programming:</b></size>\nBucurescu
     Radu Costin\nDan Florin-Eduard\nChirica Dragos Corneliu\nConstantinescu George
-    Daniel\nSemih Bertug Benim\n\n\n\n\n\n\n<size=+10><b>Art:</b></size>\nNita Alexandra\nFiuciuc
-    Andrei Nicolas\nLevel Design:\nPaun Liviu Andrei\nMilitaru Serban\nChereches
-    Dragos Mihai\n\n\n\n\n\n\n<size=+10><b>Game Design:</b></size>\nAlexandru Balta\nStoenescu
-    Vlad Alexandru\n\n\n\n\n<size=+10><b>Music & Sound Effects:</b></size>\nNeacsu
-    Constantin Adrian\n\n\n\n\n\n\n\n\n\n\n\n\nGoethe-Instituts\nGoethe-Institut
-    Bukarest\nGoethe-Institut Istanbul\nGoethe-Institut Sarajevo\nGoethe-Institut
-    Belgrad\n\n\n\n\n<size=+10><b>Project Coordination:</b></size>\nSophie Engel\nMarculet
-    Petrescu Cristina\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThank
+    Daniel\nSemih Bertug Benim\n\n\n\n\n<size=+10><b>Art:</b></size>\nNita Alexandra\nFiuciuc
+    Andrei Nicolas\n\n\n\n\n<size=+10><b>Level Design:</b></size>\nPaun Liviu Andrei\nMilitaru
+    Serban\nChereches Dragos Mihai\n\n\n\n\n<size=+10><b>Game Design:</b></size>\nAlexandru
+    Balta\nStoenescu Vlad Alexandru\n\n\n\n\n<size=+10><b>Music & Sound Effects:</b></size>\nNeacsu
+    Constantin Adrian\n\n\n\n\n\n\n\n\nGoethe-Instituts\nGoethe-Institut Bukarest\nGoethe-Institut
+    Istanbul\nGoethe-Institut Sarajevo\nGoethe-Institut Belgrad\n\n\n\n\n<size=+10><b>Project
+    Coordination:</b></size>\nSophie Engel\nMarculet Petrescu Cristina\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThank
     you for playing!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2a92f57b9b48648a7b4c462691197c37, type: 2}
@@ -388,12 +387,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 387084104}
-    characterCount: 746
+    characterCount: 744
     spriteCount: 0
-    spaceCount: 157
+    spaceCount: 155
     wordCount: 84
     linkCount: 0
-    lineCount: 107
+    lineCount: 105
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
